@@ -38,7 +38,7 @@ numerical_features = ['Age', 'BP', 'Cholesterol', 'Max HR', 'ST depression']
 heart_data[numerical_features] = scaler.fit_transform(heart_data[numerical_features])
 
 # Save the cleaned dataset
-cleaned_file_path = '/path/to/Cleaned_Heart_Disease_Prediction.csv'
+cleaned_file_path = '../healthcare/Cleaned_Heart_Disease_Prediction.csv'
 heart_data.to_csv(cleaned_file_path, index=False)
 
 print("Data cleaning and transformation complete. Cleaned dataset saved to:", cleaned_file_path)
